@@ -4,4 +4,7 @@ class PagesController < ApplicationController
   # expects a home.html.erb file in app/views/pages
   def home
   end
+
+  def about
+  end
 end
