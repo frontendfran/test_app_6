@@ -1,0 +1,21 @@
+<%# This is where all our views get served through in our applicatin  %>
+<%# what other view file that we create will be served through here  %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TestApp6</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%# calling manifest file - see app/assets/stylesheets/application.css %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%# <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> %>
+  </head>
+
+  <body>
+    <%# Views will re served through this area of this file %>
+    <%# therefore have access to all the same styles and JS %>
+    <%= yield %>
+  </body>
+</html>
